@@ -2,14 +2,14 @@ package com.lucas.interface.Classes;
 
 public class fm {
 	
-	private float frequencia;
+	private float estacao;
 
-	public float getFrequencia(){
-		return frequencia;
+	public float getEstacao(){
+		return estacao;
 	}
 
-	public void setFrequencia(float frequencia){
-		this.frequencia = frequencia;
+	public void setEstacao(float estacao){
+		this.estacao = estacao;
 	}
 
 

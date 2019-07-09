@@ -1,0 +1,31 @@
+package br.edu.univille.factory;
+
+import com.lucas.interface.Displays.display;
+import com.lucas.interface.Classes.calendario;
+import com.lucas.interface.Classes.fm;
+import com.lucas.interface.Classes.display;
+import com.lucas.interface.Classes.temp;
+
+public class Factory {
+
+	public Display getInstance(String Classes){
+		
+		switch (Classes) {
+		case "calendario":
+			return new calendario();
+
+		case "fm":
+			return new fm();
+
+		case "relogio":
+			return new relogio();
+
+			
+		case "temp":
+			return new temp();
+			
+
+		}
+		
+	}
+}

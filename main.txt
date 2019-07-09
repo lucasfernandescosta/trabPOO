@@ -1,0 +1,42 @@
+package com.lucas.interface.main;
+
+import com.lucas.interface.Classes.calendario;
+import com.lucas.interface.Classes.fm;
+import com.lucas.interface.Classes.display;
+import com.lucas.interface.Classes.temp;
+import com.lucas.interface.Displays.display;
+import com.lucas.interface.Displays.Calendario;
+import com.lucas.interface.Displays.FM;
+import com.lucas.interface.Displays.Relogio;
+import com.lucas.interface.Displays.Temperatura;
+import br.edu.univille.Factory.factory;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Hora hora = new Hora(21,45);
+		Relogio relogio = (Relogio) factory.getInstance("relogio");
+		relogio.setHora(hora);
+		relogio.show();
+
+		Estacao estacao = new estacao(103.1);
+		Fm fm = (Fm) factory.getInstance("Fm");
+		fm.setFm(fm);
+		fm.show();
+			
+		Temp temp = new Temp(03);
+		Temp temp = (Temp) factory.getInstance("Temp");
+		temp.setGraus(temp);
+		temp.show();
+
+		Calendario calendario = new Calendario(01,01,2000);
+		Calendario calendario = (Calendario) factory.getInstance("Calendario");
+		calendario.setAno.setMes.SetDia(calendario);
+		calendario.show();
+
+
+		Factory factory = new Factory();
+	}
+
+}
